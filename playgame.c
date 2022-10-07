@@ -1,16 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-int main(int argc, char** argv){
+int main(){
     int human = 0;
     int prev =0;
     int max = 0;
     int count =0;
     int computer = 0;
     int flag = 0;
-    int memary[3][3] = {
-    0}
-    ;
+    int memary[3][3] = {0};
     srand(time(NULL));
     while(1){
         printf("剪刀, 石头...(0-剪刀,1-石头,2-布)\n");
@@ -44,7 +42,7 @@ int main(int argc, char** argv){
         memary[prev][human]++;
         prev = human;
     }
-    printf("Hello world");
+    printf("Hello world\n");
     return 0;
 }
 
