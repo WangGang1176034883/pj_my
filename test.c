@@ -237,5 +237,6 @@ int main(int argc,char** argv) {
     greatstar(5);
     lessstar(5);
     upstar(9);
+    printf("hello world!");
 }
 
