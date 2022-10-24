@@ -6,4 +6,4 @@ int main(){
 		printf("%d ", i);
 	}
 	printf("hello world\n");
- }
+}
