@@ -153,10 +153,61 @@ void ptr_stu(){
 		printf("\n");
 	}
 }
+void pin(int(*p)[4], int n){
+	for(int i = 0;i < n;i++) {
+		for(int j = 0;j < 4;j++) {
+			printf("%2d ",*(*(p+i)+j));
+		}
+		printf("\n");
+	}
+}
+void pri(int *p, int m, int n){
+	for(int i = 0;i < m*n;i++) {
+
+		printf("%d ", *p);
+		p++;
+	}
+}
+char* search(char* tagstr, char* c){
+	char* p= tagstr;
+	while(*p != '\0'){
+		if(*p == *c)
+		{
+			return p;
+		}
+		p++;
+	}
+	return NULL;
+}
+void fun_search(){
+	char* string = "I am a student", c;
+	printf("Please enter the character:");
+	scanf("%c", &c);
+	if(search(string, &c))
+	{
+		printf("FOUND! %lu, search(string, &c));
+	}else
+	{
+		printf("Not Found!\n");
+	};
+}
 int main(int argc,char** argv) {
 	//ptr_twoarray();
 	//ptr_twoarray1();
 	//ptr_twoarray2();
 	//ptrarray1();
-	ptr_stu();
+	//ptr_stu();
+	int a[3][4]={
+		{
+			1,3,5,7}
+		,{
+			9,11,13,15}
+		,{
+			17,19,21,23}
+	}
+	;
+	//pin(a, 3);
+	//pri(*a,3,4);
+	fun_search();
+
 }
