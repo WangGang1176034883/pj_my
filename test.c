@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 char *tstrcat(char *s,char *t)
 {
 	char *p=s;
@@ -13,5 +14,4 @@ int main(void)
 	char *b="kui";
 	printf("%s\n",tstrcat(a,b));
 	return 0;
-
 }
