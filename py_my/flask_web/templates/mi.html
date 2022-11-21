@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>search</title>
+<style>
+	body{
+		margin: 0;
+	}
+	.clearfix:after{
+		display: block;
+		content: "";
+		clear: both;
+	}
+	.top{
+		background-color: #333;
+	}
+	.top a{
+		display: inline-block;
+		line-height: 40px;
+		color: #b0b0b0;
+		font-size: 12px;
+		text-decoration: none;
+	}
+	.container{
+		margin: 0 auto;
+		width: 800px;
+	}
+	.logo{
+		float: left;
+		width: 100px;
+	}
+	.logo a{
+		 height: 56px;width:56px;
+		 display:inline-block;
+		 margin-top: 22px;
+	}
+	.main-menu{
+		float: left;
+	}
+	.main-menu a{
+		display: inline-block;
+		padding: 40px;
+		text-decoration: none;
+		color: #333;
+	}
+	.main-menu a:hover{
+		color: #ff6700;
+	}
+	.search{
+		float: right;
+		background-color: green;
+
+	}
+</style>
+</head>
+<body>
+	<div class="top">
+		<div class="container clearfix">
+			<a>首页</a>
+			<a>MIUI</a>
+			<div style="float: right">
+				<a>登录</a>
+				<a>注册</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="middle">
+		<div class="container clearfix">
+			<div class="logo">
+				<a>
+					<img src="/static/logo3.png" style="width: 100%;">
+				</a>
+			</div>
+			<div class="main-menu">
+				<a href="https://www.mi.com/">小米手机</a>
+				<a href="https://www.mi.com/">红米手机</a>
+				<a href="https://www.mi.com/">小米电视</a>
+			</div>
+			<div class="search">搜索</div>
+		</div>
+	</div>
+</body>
+</html>
